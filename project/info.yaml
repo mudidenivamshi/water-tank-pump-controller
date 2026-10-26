@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "Smart Water Tank Pump Controller with Overflow Protection"      # Project title
+  author:       "M. Vamshi Krishna"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Water tank pump controller (FSM + debounce + restart lockout) with overflow alarm and fail-safe pump shut-off"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_water_tank_ctrl"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "water_tank_ctrl.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "low_sensor (0 = tank LOW)"
+  ui[1]: "full_sensor (1 = tank FULL)"
+  ui[2]: "overflow_sensor (1 = overflow)"
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "pump_on"
+  uo[1]: "alarm (overflow or invalid sensors)"
+  uo[2]: "level_low (accepted level is LOW)"
+  uo[3]: "level_full (accepted level is FULL)"
+  uo[4]: "overflow_seen"
+  uo[5]: "restart_wait (pump wanted, lockout running)"
+  uo[6]: "invalid_seen (FULL without LOW)"
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: "state_dbg[0] (output)"
+  uio[1]: "state_dbg[1] (output)"
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6

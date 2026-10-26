@@ -1,0 +1,27 @@
+
+8. Printing statistics.
+
+=== water_tank_ctrl ===
+
+   Number of wires:                 80
+   Number of wire bits:            101
+   Number of public wires:          27
+   Number of public wire bits:      43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 87
+     $_ANDNOT_                      27
+     $_AND_                          2
+     $_DFFE_PN0P_                   11
+     $_DFFE_PN1P_                    2
+     $_DFF_PN0_                      7
+     $_DFF_PN1_                      2
+     $_NAND_                         3
+     $_NOR_                          6
+     $_NOT_                          3
+     $_ORNOT_                        9
+     $_OR_                           7
+     $_XNOR_                         2
+     $_XOR_                          6
+

@@ -1,0 +1,7 @@
+pump started 100000001 clocks after reset release (expected about 100000000 = 10 s at 10 MHz)
+SMOKE TEST PASSED
+verification/tb_fullsize_smoke.v:18: $finish called at 1000000040000 (1ps)
+
+real	3m34.737s
+user	3m31.871s
+sys	0m0.159s

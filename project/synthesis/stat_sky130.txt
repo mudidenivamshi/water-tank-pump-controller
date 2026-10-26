@@ -1,0 +1,44 @@
+
+11. Printing statistics.
+
+=== water_tank_ctrl ===
+
+   Number of wires:                113
+   Number of wire bits:            172
+   Number of public wires:          26
+   Number of public wire bits:      62
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                154
+     sky130_fd_sc_hd__a211oi_1       1
+     sky130_fd_sc_hd__a21boi_0       1
+     sky130_fd_sc_hd__a21oi_1        9
+     sky130_fd_sc_hd__a31oi_1        2
+     sky130_fd_sc_hd__and2_0         4
+     sky130_fd_sc_hd__and3_1         2
+     sky130_fd_sc_hd__and4_1         3
+     sky130_fd_sc_hd__buf_1          2
+     sky130_fd_sc_hd__clkinv_1       9
+     sky130_fd_sc_hd__dfrtp_1       43
+     sky130_fd_sc_hd__mux2_1         5
+     sky130_fd_sc_hd__nand2_1        7
+     sky130_fd_sc_hd__nand3_1        4
+     sky130_fd_sc_hd__nand3b_1       1
+     sky130_fd_sc_hd__nand4_1        4
+     sky130_fd_sc_hd__nand4b_1       3
+     sky130_fd_sc_hd__nor2_1        12
+     sky130_fd_sc_hd__nor2b_1        4
+     sky130_fd_sc_hd__nor3_1         8
+     sky130_fd_sc_hd__nor4_1         3
+     sky130_fd_sc_hd__nor4b_1        1
+     sky130_fd_sc_hd__nor4bb_1       1
+     sky130_fd_sc_hd__o21ai_0        5
+     sky130_fd_sc_hd__o31a_1         1
+     sky130_fd_sc_hd__or3_1          1
+     sky130_fd_sc_hd__or4_1          1
+     sky130_fd_sc_hd__xnor2_1       12
+     sky130_fd_sc_hd__xor2_1         5
+
+   Chip area for module '\water_tank_ctrl': 1759.187200
+

@@ -1,0 +1,9 @@
+# Synthesise the SAME RTL with the short simulation timing parameters, for gate-level simulation.
+read_verilog src/water_tank_ctrl.v
+chparam -set CLK_DIV 4 -set PRE_W 3 -set T_DEB 3 -set T_REST 10 water_tank_ctrl
+hierarchy -check -top water_tank_ctrl
+proc; opt_clean
+synth -top water_tank_ctrl -flatten
+check -assert
+tee -o gls/stat_short.txt stat
+write_verilog -noattr gls/water_tank_short_netlist.v

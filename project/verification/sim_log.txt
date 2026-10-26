@@ -1,0 +1,4 @@
+VCD info: dumpfile sim/water_tank.vcd opened for output.
+      closed-loop tank: level stayed between 18 and 91, pump started 17 times
+ALL TESTS PASSED (486759 checks, 0 errors)
+verification/tb_water_tank_ctrl.v:180: $finish called at 973900000 (1ps)
